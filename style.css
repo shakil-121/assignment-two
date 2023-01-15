@@ -156,15 +156,33 @@ position: relative;
     gap: 100px; 
     justify-content: center; 
     margin-top: 100px;
- } 
+ }  
+
+ /* ============================================
+   In this section use simple Animation use
+ ======================================================= */
  .section-three-card{ 
     border: 1px solid var(--primary-color); 
     border-radius: 7px; 
     padding: 15px; 
     text-align: center; 
-    width: 20%;
+    width: 20%; 
+    animation: card 15s;
  }  
-
+@keyframes card{ 
+    0%   {
+        background-color: blue; 
+        color: #fff;
+    }
+    25%  {
+          background-color: rgb(255, 255, 0); 
+          color:black ;}
+    50%  {
+        background-color: red; 
+        color: #fff;
+    }
+    100% {background-color: rgb(79, 243, 3);}
+}
  /* section four style  */
  .section-four{ 
     text-align: center; 
@@ -217,4 +235,77 @@ position: relative;
     padding: 15px;
     color: #ffff; 
     background-color: rgb(98, 4, 141);
- }
+ } 
+
+ /* resopnsive section  */ 
+ /* for up to <576px device  */ 
+ @media screen and (max-width:576px) {
+    header{ 
+        width: 576px;
+    } 
+    .nav-bar{
+        flex-direction: column; 
+        margin: 0px;
+    } 
+    .manu{
+        flex-direction: column;
+    }  
+    .image{ 
+        width: 90%;
+        height: 271px; 
+        padding: 0;
+    }
+    .gallary-left img{ 
+        height: 400px; 
+        width: 400px;   
+    } 
+    .section-one{
+        display: grid; 
+        grid-template-columns: repeat(1,1fr); 
+        padding: 0; 
+    }
+    .gallary-left{ 
+        padding: 10px 87px;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-one-description {
+        margin: 19px 0px;
+    } 
+    .section-one-text{ 
+        margin: 20px 0px;
+    }
+    .section-two{ 
+        grid-template-columns: 100%; 
+        margin: 0px; 
+        align-items: center;
+    } 
+    .right-card{ 
+        margin: -43px 190px;
+    } 
+    .section-three{ 
+        margin: 100px 0px;
+    } 
+    .section-three-cards{ 
+        flex-direction: column; 
+        align-items: center;
+    }  
+    .section-three-card{ 
+        width: 350px; 
+        height: 200px;
+    }
+    .section-four-cards{ 
+        display: grid; 
+        grid-template-columns: repeat(2,1fr); 
+        
+    } 
+    .footer-section{ 
+        height: 653px; 
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+
+ } 
+ /* for <360px width device  */ 
+ 
