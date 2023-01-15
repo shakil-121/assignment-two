@@ -61,7 +61,13 @@ header{
     background-color: var(--primary-color) ; 
     border: 0px; 
     margin-bottom: 50px;
-} 
+}  
+.hader-btn:hover{ 
+    background-color: rgb(255, 0, 76); 
+    width: 142px; 
+    height: 47px;  
+    transition: 2s;
+}
 /* header banner style  */  
 .header-banner{
     width: 100%;   
@@ -308,4 +314,32 @@ position: relative;
 
  } 
  /* for <360px width device  */ 
- 
+ @media screen and (max-width:360px){ 
+    header {
+        width: 360px;
+    }
+    .right-card {
+        margin: -43px 92px;
+    } 
+    .section-one-text {
+        margin: 20px 85px;
+    } 
+    .gallary-left img {
+        height: 200px;
+        width: 200px;
+    } 
+    .image {
+        width: 90%;
+        height: 189px ;
+        padding: 0;
+    }  
+    .section-three-card {
+        width: 246px;
+        height: 200px;
+    } 
+    .section-four-cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+ }
