@@ -309,7 +309,9 @@ position: relative;
         height: 653px; 
         grid-template-columns: repeat(1,1fr);
     }
-
+    .copy-right{ 
+        height: 80px;
+    }
 
 
  } 
@@ -340,6 +342,15 @@ position: relative;
     .section-four-cards {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    } 
+    .footer-section p { 
+        margin-bottom: 20px;
+    } 
+    .footer-section p { 
+        margin-bottom: 20px;
+    } 
+    .copy-right{ 
+        height: 80px;
     }
 
  }
